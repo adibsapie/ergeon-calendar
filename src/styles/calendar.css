@@ -1,0 +1,140 @@
+.date-format {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.date-format-title {
+    padding-right: 20px;
+}
+
+.date-format-selection {
+    font-size: 20px;
+}
+
+.calendar-head {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+}
+
+.arrow {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    outline: 0;
+    border: 2px solid #7fa1e7;
+    cursor: pointer;
+    position: relative;
+    background-color: #7fa1e7;
+}
+
+
+.left-arrow {
+    padding-right: 16px;
+}
+
+.right-arrow {
+    padding-left: 16px;
+}
+
+.slide i {
+    opacity: 0;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.slide span {
+    transition: transform 0.8s;
+}
+
+.slide:hover span {
+    transform: translateX(-6px);
+}
+
+.slide:hover i {
+    opacity: 1;
+    transform: translateX(-6px);
+}
+
+
+
+.calendar-body{
+    margin-top: 30px;
+}
+.calendar-output{
+    margin:auto;
+    padding:4px;
+    margin-top:16px;
+    width:fit-content;
+}
+.calendar-days {
+    display: flex;
+    justify-content: space-evenly;
+}
+.calendar-day {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-day span{
+    display:block;
+}
+
+
+.calendar-active {
+    background-color: #29efc0  !important;
+    border-radius: 50%;
+}
+
+.calendar-today {
+    background-color: #f0f8ff;
+    border-radius: 50%;
+}
+
+
+.animated-button {
+    background: #7fa1e7;
+    width:48px;
+    height:48px;
+    cursor: pointer;
+    color: #000000;
+    display: block;
+    position: relative;
+    border: 1px solid #7fa1e7;
+    border-radius:50%;
+    transition: all 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.animated-button:hover {
+    color: #000 !important;
+    background-color: transparent;
+}
+
+
+.animated-button:hover:before {
+    top: 0;
+    bottom: auto;
+    height: 100%;
+}
+.animated-button:before {
+    display: block;
+    border-radius:50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    background: #7fa1e7;
+    transition: all 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}

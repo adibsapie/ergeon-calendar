@@ -1,0 +1,20 @@
+@import "calendar.css";
+
+.calendar {
+  text-align: center;
+  margin: 100px auto auto;
+}
+
+.calendar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2vmin);
+}
+
+.calendar-container{
+  display: block;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
